@@ -1,0 +1,3 @@
+// Atmosphere transitions without an overlaid title blocking chapter progress.
+function confetti(n=38){if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;for(let i=0;i<n;i++){let d=document.createElement('i');d.className='confetti';d.style.setProperty('--x',((i*73+9)%100)+'%');d.style.setProperty('--dx',((i*37)%180-90)+'px');d.style.setProperty('--t',(2.8+(i%7)*.29)+'s');d.style.setProperty('--c',['#ebc78a','#b6d9c7','#ebaeb6','#a8bada'][i%4]);document.body.appendChild(d);setTimeout(()=>d.remove(),5300)}}
+function cinematicBeat(){const caption=document.getElementById('cinematicTitle');if(caption){caption.textContent='';caption.classList.remove('show')}if(world.flyby)world.flyby()}
